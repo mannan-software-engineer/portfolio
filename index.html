@@ -1,601 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag("js", new Date());
-
     gtag("config", "G-YMWDE0VTD3");
+  </script>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+      document.documentElement.classList.add("js");
+    })();
   </script>
 
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
+  <meta name="theme-color" content="#070a12" />
+  <title>Abdul Mannan — Senior Backend Developer</title>
   <meta name="description"
-    content="Abdul Mannan | Python Backend Developer. Building secure, scalable APIs and distributed systems. Lahore, Pakistan." />
-  <meta name="keywords"
-    content="Abdul Mannan,Abdul Mannan portfolio,Python developer,backend developer,FastAPI,Django,Lahore Pakistan,software engineer" />
+    content="Abdul Mannan, Senior Backend Developer in Lahore, Pakistan. FastAPI and Django microservices, Docker, Kubernetes, CI/CD and observability for fintech, e-commerce and food-tech." />
   <meta name="author" content="Abdul Mannan" />
-  <meta property="og:image" content="https://www.abdul-mannan.com/src/png/preview-card-min.png" />
-  <meta property="og:title" content="Abdul Mannan | Python Backend Developer" />
-  <meta property="og:description"
-    content="Results-driven Software Engineer. Python backend, FastAPI, distributed systems, production-grade APIs. Lahore, Pakistan." />
+  <link rel="canonical" href="https://www.abdul-mannan.com/" />
 
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.abdul-mannan.com/" />
-  <meta property="og:site_name" content="Abdul Mannan Portfolio" />
-
+  <meta property="og:site_name" content="Abdul Mannan" />
+  <meta property="og:title" content="Abdul Mannan — Senior Backend Developer" />
+  <meta property="og:description"
+    content="FastAPI microservices, Kubernetes, CI/CD and observability. 30% faster APIs, 10× peak traffic, zero-downtime releases." />
+  <meta property="og:image" content="https://www.abdul-mannan.com/src/webp/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Abdul Mannan, Senior Backend Developer" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Abdul Mannan | Python Backend Developer" />
+  <meta name="twitter:title" content="Abdul Mannan — Senior Backend Developer" />
   <meta name="twitter:description"
-  content="Results-driven Software Engineer. Python backend, FastAPI, distributed systems. Lahore, Pakistan." />
-  <meta name="twitter:image" content="https://www.abdul-mannan.com/src/png/preview-card-min.png" />
-  <title>Abdul Mannan | Python Backend Developer</title>
-  <link rel="icon" type="image/x-icon" href="src/png/tab-photo.png" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
+    content="FastAPI microservices, Kubernetes, CI/CD and observability. 30% faster APIs, 10× peak traffic, zero-downtime releases." />
+  <meta name="twitter:image" content="https://www.abdul-mannan.com/src/webp/og-card.jpg" />
+
+  <link rel="icon" type="image/png" sizes="96x96" href="src/png/favicon-96.png" />
+  <link rel="apple-touch-icon" href="src/png/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css?v=7" />
 
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdul Mannan",
+    "jobTitle": "Senior Backend Developer",
+    "email": "mailto:mannanforge@gmail.com",
+    "telephone": "+923402480258",
+    "image": "https://www.abdul-mannan.com/src/webp/portrait.jpg",
+    "url": "https://www.abdul-mannan.com/",
+    "worksFor": { "@type": "Organization", "name": "Crypthon Technologies" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "knowsAbout": ["Python", "FastAPI", "Django", "Kubernetes", "Docker", "PostgreSQL", "Celery", "AWS", "CI/CD"],
+    "sameAs": [
+      "https://github.com/mannan-software-engineer",
+      "https://www.linkedin.com/in/mannan-software-engineer"
+    ]
+  }
+  </script>
+</head>
 
-  <header>
-    <div class="navbar" id="navbar">
-      <div class="hey">Hey!</div>
-      <a href="#home" class="navbar-brand" tabindex="0" aria-label="Abdul Mannan - go to home">
-        <div class="logo" tabindex="-1" aria-hidden="true">
-          <div class="logo-top">
-            <img src="src/png/nav-avatar.png" alt="Abdul Mannan" id="nav-avatar"/>
-          </div>
-        </div>
-        <article class="navbar-name" id="navbar-name" aria-label="Abdul Mannan">
-          <p class="jello">A</p>
-          <p class="jello">b</p>
-          <p class="jello">d</p>
-          <p class="jello">u</p>
-          <p class="jello">l</p>
-          &nbsp;
-          <p class="jello">M</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">n</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">.</p>
-        </article>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Abdul Mannan, back to top">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-text">
+          <span class="brand-name">Abdul Mannan</span>
+          <span class="brand-role">Senior Backend Developer</span>
+        </span>
       </a>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <div class="navbar-tab-indicator" id="navbar-tab-indicator" aria-hidden="true"></div>
-        <ul class="navbar-tabs-ul">
-          <li class="navbar-tabs-li home activeThistab" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button" class="navbar-tab-link">
-              &#60;/Home&#62;
-            </a>
-          </li>
-          <li class="navbar-tabs-li about" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button" class="navbar-tab-link">
-              &#60;/AboutMe&#62;
-            </a>
-          </li>
-          <li class="navbar-tabs-li skills" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button" class="navbar-tab-link">
-              &#60;/Skills&#62;
-            </a>
-          </li>
-          <li class="navbar-tabs-li projects" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button" class="navbar-tab-link">
-              &#60;/Projects&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <style>
-        .navbar-tabs-ul {
-          display: flex;
-          gap: 1.5rem;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-        .navbar-tabs-li {
-          border-radius: 24px;
-          transition: background 0.2s;
-        }
-        .navbar-tab-link {
-          display: inline-block;
-          padding: 0.9rem 2rem;
-          border-radius: 24px;
-          text-decoration: none;
-          color: inherit;
-          background: none;
-          transition: background 0.2s;
-        }
-      </style>
-      <!-- navbar tabs ends -->
-    </div>
-    <div class="header-actions" aria-label="Appearance and sound">
-      <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-        <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-        <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-          aria-label="switch appearance"></label>
-      </div>
-      <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-        <input type="checkbox" id="switchforsound" onclick="playpause()" />
-        <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-          class="needtobeinvert"></label>
-      </div>
-    </div>
-  </header>
-  <!-- header ends here -->
 
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="nav-links-mobile"><a href="src/pdf/Abdul-Mannan-CV.pdf" target="_blank" rel="noopener">Download CV</a></li>
+        <li class="nav-links-mobile"><a href="#contact">Hire me</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm nav-hire" href="#contact">Hire me</a>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
       </div>
-    </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
+    </nav>
+  </header>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
-          </a>
-        </li>
-      </ul>
-      <div class="mobile-menu-actions" aria-label="Appearance and sound">
-        <div class="visualmodetogglebuttoncontainer">
-          <input type="checkbox" id="switchforvisualmode-mobile" onchange="syncVisualFromMobile()" />
-          <label for="switchforvisualmode-mobile" class="labelforvisualmode-mobile" tabindex="0" aria-label="Switch appearance"></label>
-        </div>
-        <div class="soundtogglebuttoncontainer">
-          <input type="checkbox" id="switchforsound-mobile" onchange="syncSoundFromMobile()" />
-          <label for="switchforsound-mobile" class="labelforsound-mobile needtobeinvert" tabindex="0" aria-label="Switch sound"></label>
-        </div>
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+        <div class="grid-overlay"></div>
       </div>
-    </div>
-    <!-- mobile toggle menu ends -->
 
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">A</p>
-          <p class="jello">s</p>
-          <p class="jello">s</p>
-          <p class="jello">a</p>
-          <p class="jello">l</p>
-          <p class="jello">a</p>
-          <p class="jello">m</p>
-          &nbsp;
-          <p class="jello">o</p>
-          &nbsp;
-          <p class="jello">A</p>
-          <p class="jello">l</p>
-          <p class="jello">a</p>
-          <p class="jello">i</p>
-          <p class="jello">k</p>
-          <p class="jello">u</p>
-          <p class="jello">m</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">A</p>
-          <p class="jello">b</p>
-          <p class="jello">d</p>
-          <p class="jello">u</p>
-          <p class="jello">l</p>
-          &nbsp;
-          <p class="jello">M</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">n</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">.</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">I</p>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="badge reveal" data-delay="0">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to new opportunities
+          </p>
+          <p class="hero-hello reveal" data-delay="1">Hi, I'm <strong>Abdul Mannan</strong>, Senior Backend Developer</p>
+          <h1 class="reveal" data-delay="2">
+            I build backend systems that <span class="gradient-text">scale without breaking.</span>
+          </h1>
+          <p class="hero-rotator reveal" data-delay="3">
+            <span class="rotator-label">Specialised in</span>
+            <span class="rotator" id="rotator" aria-live="polite">FastAPI microservices</span>
+          </p>
+          <p class="lead reveal" data-delay="4">
+            3+ years architecting production-grade platforms for fintech, e-commerce and food-tech. I own the
+            whole path, from API design and PostgreSQL data modelling to Docker, Kubernetes, CI/CD and observability.
+          </p>
+          <div class="hero-cta reveal" data-delay="5">
+            <a class="btn btn-primary btn-lg" href="#contact">
+              Let's work together
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="src/pdf/Abdul-Mannan-CV.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </a>
           </div>
-          <div>
-            <p class="jello">b</p>
-            <p class="jello">u</p>
-            <p class="jello">i</p>
-            <p class="jello">l</p>
-            <p class="jello">d</p>
-          </div>
-          <div>
-            <p class="jello">&</p>
-          </div>
-          <div>
-            <p class="jello">a</p>
-            <p class="jello">u</p>
-            <p class="jello">t</p>
-            <p class="jello">o</p>
-            <p class="jello">m</p>
-            <p class="jello">a</p>
-            <p class="jello">t</p>
-            <p class="jello">e</p>
-          </div>
-          <div>
-            <p class="jello">b</p>
-            <p class="jello">a</p>
-            <p class="jello">c</p>
-            <p class="jello">k</p>
-            <p class="jello">e</p>
-            <p class="jello">n</p>
-            <p class="jello">d</p>
-          </div>
-          <div>
-            <p class="jello">w</p>
-            <p class="jello">i</p>
-            <p class="jello">t</p>
-            <p class="jello">h</p>
-          </div>
-          <div>
-            <p class="jello">P</p>
-            <p class="jello">y</p>
-            <p class="jello">t</p>
-            <p class="jello">h</p>
-            <p class="jello">o</p>
-            <p class="jello">n</p>
-            <p class="jello">.</p>
-          </div>
-        </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          Results-driven Software Engineer with strong expertise in Python backend development and distributed systems. I design, build, and deploy production-grade APIs across domains like fintech, logistics, and enterprise. I value secure architecture, scalability, and clean code.
-        </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:c6mannan@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-        </div>
-        <!-- contact-btn-div -->
-      </div>
-     
-    </section>
-    <!-- landing page ends here -->
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
-              Hi, I'm Abdul Mannan. I'm a Python Backend Developer based in Lahore, Pakistan. I build secure, scalable systems and production-grade APIs using FastAPI, Django, and modern cloud-native tooling.
-            </p>
-            <br />
-            <p tabindex="0">
-              I have hands-on experience across food tech, logistics, finance, and enterprise sales—from order-matching platforms and wallet systems to real-time chat and background processing. I focus on clean architecture, database design, and reliable deployment.
-            </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-        </div>
-
-        <div class="text">Resume</div>
-      </button>
-          </div>
-
-          <div class="dp" data-aos="fade-up">
-            <img src="src/webp/mannan.png" alt="Abdul Mannan" tabindex="0" aria-label="Abdul Mannan" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends  -->
-
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
-            aria-label="Backend and systems tech stack">
-            Tech Stack
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/python.png" alt="Python" class="tech-stack-logo" />
-              <span class="tooltip">PYTHON</span>
+          <ul class="hero-meta reveal" data-delay="6">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Lahore, Pakistan
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/fastapi.png" alt="FastAPI" class="tech-stack-logo" />
-              <span class="tooltip">FASTAPI</span>
+            <li>
+              <a href="https://github.com/mannan-software-engineer" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                GitHub
+              </a>
             </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/django.png" alt="Django" class="tech-stack-logo" />
-              <span class="tooltip">DJANGO</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/flask.png" alt="Flask" class="tech-stack-logo" />
-              <span class="tooltip">FLASK</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/celery_logo.png" alt="Celery" class="tech-stack-logo" />
-              <span class="tooltip">CELERY</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/postgresql.png" alt="PostgreSQL" class="tech-stack-logo" />
-              <span class="tooltip">POSTGRESQL</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/redis.png" alt="Redis" class="tech-stack-logo" />
-              <span class="tooltip">REDIS</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/aws.png" alt="AWS" class="tech-stack-logo" />
-              <span class="tooltip">AWS</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/githublogo.png" alt="GitHub" class="tech-stack-logo needtobeinvert" />
-              <span class="tooltip">GITHUB</span>
-            </li>
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/gitlogo.png" alt="Git" class="tech-stack-logo" />
-              <span class="tooltip">GIT</span>
+            <li>
+              <a href="https://www.linkedin.com/in/mannan-software-engineer" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
+
+        <!-- Animated deploy terminal -->
+        <div class="hero-visual reveal" data-delay="3">
+          <div class="terminal" aria-label="Animated terminal showing a deployment pipeline" role="img">
+            <div class="terminal-bar">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <p>~/platform — zsh</p>
+            </div>
+            <pre class="terminal-body" id="terminal" aria-hidden="true"></pre>
+          </div>
+          <div class="float-card float-card-1" aria-hidden="true">
+            <span class="float-icon">⚡</span>
+            <div><strong>−30%</strong><span>API response time</span></div>
+          </div>
+          <div class="float-card float-card-2" aria-hidden="true">
+            <span class="float-icon ok">✓</span>
+            <div><strong>Zero-downtime</strong><span>Kubernetes releases</span></div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- skills section ends -->
-    <section class="projects-section-container" id="projects">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
+
+    <!-- ================= TECH MARQUEE ================= -->
+    <section class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <ul>
+          <li>Python</li><li>FastAPI</li><li>Django</li><li>DRF</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li>
+          <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>GitHub Actions</li><li>AWS</li><li>ELK Stack</li>
+          <li>Prometheus</li><li>Grafana</li><li>WebSockets</li><li>OAuth 2.0</li><li>MongoDB</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Python</li><li>FastAPI</li><li>Django</li><li>DRF</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li>
+          <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>GitHub Actions</li><li>AWS</li><li>ELK Stack</li>
+          <li>Prometheus</li><li>Grafana</li><li>WebSockets</li><li>OAuth 2.0</li><li>MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= IMPACT ================= -->
+    <section class="container impact" aria-label="Impact in numbers">
+      <div class="impact-grid">
+        <div class="impact-card reveal" data-delay="0">
+          <p class="impact-num"><span class="count" data-to="3">0</span>+</p>
+          <p class="impact-label">Years building production backends</p>
         </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/grabngo-logo.webp" alt="GrabNGo" class="faviconforProject" />
-                <article class="ProjectHeading">GrabNGo</article>
-                <p class="ProjectDescription">
-                  Cross-border purchase and delivery platform connecting buyers with travelers. Backend handles order matching, offer/accept workflows, transactions, and reviews with role-based access and scalable architecture.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://grabngo.pk" target="_blank" class="cta" aria-label="GrabNGo">
-                    <span class="cta-sign">
-                      <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                      </svg>
-                    </span>
-                    <span class="cta-text">View</span>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/grabngo-preview.png" alt="GrabNGo preview" />
-              </div>
-            </div>
-          </div>
-          <!-- ---------------------- -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/laendaen-logo.webp" alt="LaenDaen" class="faviconforProject" />
-                <article class="ProjectHeading">LaenDaen</article>
-                <p class="ProjectDescription">
-                  Wallet-based financial management system: invoicing, budget tracking, cash flow. Financial operations include cash-in/cash-out, bad debt marking, waivers, Neem Payment Gateway integration, and secure transaction reconciliation.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://laendaen.com" target="_blank" class="cta" aria-label="LaenDaen">
-                    <span class="cta-sign">
-                      <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                      </svg>
-                    </span>
-                    <span class="cta-text">View</span>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/laendaen-preview.png" alt="LaenDaen preview" />
-              </div>
-            </div>
-          </div>
-          <!-- ---------------------- -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/omc-logo.webp" alt="OMC" class="faviconforProject" />
-                <article class="ProjectHeading">OMC – Oil Management Company</article>
-                <p class="ProjectDescription">
-                  Enterprise system for oil companies: sales operations, financial reconciliation, workflows for buyers and sales personnel, transaction records, and accurate operational and financial reporting.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://play.google.com/store/apps/details?id=com.omcsolution.app" target="_blank" class="cta" aria-label="OMC">
-                    <span class="cta-sign">
-                      <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                      </svg>
-                    </span>
-                    <span class="cta-text">View</span>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/omc-preview.webp" alt="OMC preview" />
-              </div>
-            </div>
-          </div>
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper project-box-wrapper--center">
-            <a
-              href="https://github.com/mannan-python-developer"
-              target="_blank"
-              class="cta cta--more-projects"
-              aria-label="More Projects on GitHub"
-            >
-              <span class="cta-sign" aria-hidden="true">
-                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                  <path d="M1,5 L11,5" stroke="#6bc5f8" stroke-width="2" fill="none"></path>
-                  <polyline points="8 1 12 5 8 9" stroke="#6bc5f8" stroke-width="2" fill="none"></polyline>
-                </svg>
-              </span>
-              <span class="cta-text">More Projects</span>
-            </a>
-          </div>
-          <!-- --------------------- -->
+        <div class="impact-card reveal" data-delay="1">
+          <p class="impact-num"><span class="count" data-to="30">0</span>%</p>
+          <p class="impact-label">Faster average API response time</p>
         </div>
+        <div class="impact-card reveal" data-delay="2">
+          <p class="impact-num"><span class="count" data-to="10">0</span>×</p>
+          <p class="impact-label">Peak traffic sustained after load testing</p>
+        </div>
+        <div class="impact-card reveal" data-delay="3">
+          <p class="impact-num"><span class="count" data-to="70">0</span>%</p>
+          <p class="impact-label">Less manual release effort with CI/CD</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section container" id="services">
+      <header class="section-head reveal">
+        <p class="kicker">What I bring</p>
+        <h2>Senior ownership, from the first endpoint to production.</h2>
+        <p class="section-sub">You get one engineer who designs the API, models the data, automates the pipeline and keeps it observable once it's live.</p>
+      </header>
+
+      <div class="services">
+        <article class="service spot reveal" data-delay="0">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+          </div>
+          <h3>Backend architecture</h3>
+          <p>FastAPI and Django microservices with async endpoints, clean API contracts, and PostgreSQL models that hold up as the product grows.</p>
+          <ul class="mini-tags"><li>FastAPI</li><li>DRF</li><li>PostgreSQL</li><li>SQLAlchemy</li></ul>
+        </article>
+        <article class="service spot reveal" data-delay="1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 0 0 4.5 12 3.5 3.5 0 0 0 6 19h11.5z"/></svg>
+          </div>
+          <h3>DevOps &amp; cloud</h3>
+          <p>Docker, Kubernetes, Helm and GitHub Actions pipelines that take releases from days to hours, with autoscaling and zero downtime.</p>
+          <ul class="mini-tags"><li>Kubernetes</li><li>Helm</li><li>CI/CD</li><li>AWS</li></ul>
+        </article>
+        <article class="service spot reveal" data-delay="2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          </div>
+          <h3>Performance &amp; observability</h3>
+          <p>Load testing with JMeter plus ELK, Prometheus and Grafana, so bottlenecks are found before launch and incidents are diagnosed in minutes.</p>
+          <ul class="mini-tags"><li>JMeter</li><li>ELK</li><li>Prometheus</li><li>Grafana</li></ul>
+        </article>
+        <article class="service spot reveal" data-delay="3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Security &amp; integrations</h3>
+          <p>JWT, OAuth 2.0 and RBAC done properly, plus payment gateways, FBR e-invoicing, Twilio and Firebase FCM wired in reliably.</p>
+          <ul class="mini-tags"><li>OAuth 2.0</li><li>RBAC</li><li>Payments</li><li>Twilio</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section container" id="experience">
+      <header class="section-head reveal">
+        <p class="kicker">Experience</p>
+        <h2>Where I've shipped.</h2>
+      </header>
+
+      <ol class="timeline" id="timeline">
+        <li class="job reveal">
+          <span class="job-dot" aria-hidden="true"></span>
+          <div class="job-card spot">
+            <div class="job-top">
+              <div>
+                <h3>Senior Backend Developer</h3>
+                <p class="job-co">Crypthon Technologies <span>· Lahore, Pakistan</span></p>
+              </div>
+              <div class="job-when">
+                <span class="pill pill-live">Current</span>
+                <span class="job-dates">Feb 2025 — Present</span>
+              </div>
+            </div>
+            <ul class="job-wins">
+              <li><span class="win">−30%</span>Architected async FastAPI microservices, cutting average API response time by 30%.</li>
+              <li><span class="win">Hours</span>Own the GitHub Actions CI/CD to Kubernetes pipeline, taking releases from days to hours.</li>
+              <li><span class="win">0 down</span>Run Kubernetes with Helm, HPA and RBAC for zero-downtime production releases.</li>
+              <li><span class="win">10×</span>Load-tested with JMeter and removed bottlenecks to sustain 10× peak traffic.</li>
+            </ul>
+            <p class="job-extra">
+              <strong>Also:</strong> ELK logging that halved incident diagnosis time · Docker images ~40% smaller ·
+              FBR e-invoicing integration · JWT/OAuth 2.0 · Twilio &amp; FCM notifications · Ollama LLM groundwork.
+            </p>
+            <ul class="mini-tags"><li>FastAPI</li><li>Kubernetes</li><li>Helm</li><li>Docker</li><li>GitHub Actions</li><li>ELK</li><li>Celery</li><li>AWS S3</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <span class="job-dot" aria-hidden="true"></span>
+          <div class="job-card spot">
+            <div class="job-top">
+              <div>
+                <h3>Associate Python Developer</h3>
+                <p class="job-co">Revocode <span>· Lahore, Pakistan</span></p>
+              </div>
+              <div class="job-when"><span class="job-dates">May 2024 — Feb 2025</span></div>
+            </div>
+            <ul class="job-wins">
+              <li><span class="win">Prod</span>Built and deployed production REST APIs in FastAPI, containerised with Docker on AWS EC2 for high availability.</li>
+              <li><span class="win">−70%</span>Set up GitHub Actions CI/CD for tests, image builds and deploys, cutting manual release effort by about 70%.</li>
+              <li><span class="win">AWS</span>Managed EC2 and S3 with cost-optimised storage policies and uptime monitoring for critical APIs.</li>
+              <li><span class="win">QA</span>Wrote Selenium automation that replaced repetitive manual QA and raised test coverage.</li>
+            </ul>
+            <ul class="mini-tags"><li>FastAPI</li><li>Docker</li><li>AWS EC2</li><li>GitHub Actions</li><li>Selenium</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <span class="job-dot" aria-hidden="true"></span>
+          <div class="job-card spot">
+            <div class="job-top">
+              <div>
+                <h3>Python Automation Engineer</h3>
+                <p class="job-co">BlitzCoFluence <span>· Lahore, Pakistan</span></p>
+              </div>
+              <div class="job-when"><span class="job-dates">Nov 2023 — May 2024</span></div>
+            </div>
+            <ul class="job-wins">
+              <li><span class="win">−60%</span>Selenium automation across client platforms reduced manual operational effort by about 60%.</li>
+              <li><span class="win">Data</span>Built production web scrapers with Pandas and Chrome DevTools feeding downstream analytics pipelines.</li>
+              <li><span class="win">AI</span>Integrated external AI APIs to add classification and transformation layers to data pipelines.</li>
+            </ul>
+            <ul class="mini-tags"><li>Python</li><li>Selenium</li><li>Pandas</li><li>AI APIs</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section container" id="projects">
+      <header class="section-head reveal">
+        <p class="kicker">Selected work</p>
+        <h2>Platforms running in production.</h2>
+        <p class="section-sub">Backends I designed and built, serving real users and real money.</p>
+      </header>
+
+      <div class="projects">
+        <article class="project spot reveal">
+          <a class="project-media" href="https://grabngo.com.pk" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="src/webp/grabngo-preview.webp" alt="" loading="lazy" />
+          </a>
+          <div class="project-body">
+            <div class="project-head">
+              <img src="src/webp/grabngo-logo.webp" alt="" class="project-logo" />
+              <div>
+                <p class="project-kind">Marketplace · Cross-border logistics</p>
+                <h3>GrabNGo</h3>
+              </div>
+            </div>
+            <p class="project-desc">
+              A peer-to-peer marketplace that connects shoppers in Pakistan with travellers already flying their way.
+              Shoppers post a product link, get matched with a verified traveller and pay into escrow. Travellers
+              earn by carrying items on trips they're already taking.
+            </p>
+            <div class="project-impact">
+              <div><strong>47 countries</strong><span>live, per grabngo.com.pk</span></div>
+              <div><strong>1000s</strong><span>concurrent matching requests</span></div>
+              <div><strong>Escrow</strong><span>released on verified delivery</span></div>
+            </div>
+            <p class="project-label">What I built</p>
+            <ul class="project-points">
+              <li>Real-time order-matching engine between shoppers and travellers on WebSockets and Celery</li>
+              <li>JWT auth and RBAC for shoppers, travellers and admins; AWS S3 for receipts and delivery proof</li>
+              <li>Containerised with Docker and auto-scaled on Kubernetes for variable demand</li>
+            </ul>
+            <ul class="mini-tags"><li>FastAPI</li><li>PostgreSQL</li><li>WebSockets</li><li>Celery</li><li>Redis</li><li>Kubernetes</li></ul>
+            <div class="project-links">
+              <a class="link-arrow" href="https://grabngo.com.pk" target="_blank" rel="noopener">Visit grabngo.com.pk <span aria-hidden="true">→</span></a>
+              <a class="store-link" href="https://apps.apple.com/us/app/grabngo-shop-travel-earn/id6759244472" target="_blank" rel="noopener">App Store</a>
+              <a class="store-link" href="https://play.google.com/store/apps/details?id=com.grabngo.app" target="_blank" rel="noopener">Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project spot reveal">
+          <a class="project-media" href="https://laendaen.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="src/webp/laendaen-preview.webp" alt="" loading="lazy" />
+          </a>
+          <div class="project-body">
+            <div class="project-head">
+              <img src="src/webp/laendaen-logo.webp" alt="" class="project-logo" />
+              <div>
+                <p class="project-kind">Fintech · Digital ledger</p>
+                <h3>Laen Daen</h3>
+              </div>
+            </div>
+            <p class="project-desc">
+              "The digital ledger for everyone." Every transaction becomes an invoice the other party approves, so both
+              ledgers stay in sync. Personal users split bills and track loans; businesses run shops, inventory, orders
+              and FBR-ready tax records, even offline.
+            </p>
+            <div class="project-impact">
+              <div><strong>20,000+</strong><span>users, per laendaen.com</span></div>
+              <div><strong>Dual-ledger</strong><span>approval-based invoice sync</span></div>
+              <div><strong>Zero-downtime</strong><span>releases in fintech</span></div>
+            </div>
+            <p class="project-label">What I built</p>
+            <ul class="project-points">
+              <li>REST APIs for invoicing, budgeting and wallets, with a full audit trail on every transaction</li>
+              <li>Payment gateway integration with Celery/Redis jobs for logging, reconciliation and scheduled tasks</li>
+              <li>Docker and GitHub Actions CI/CD for consistent, zero-downtime releases</li>
+            </ul>
+            <ul class="mini-tags"><li>FastAPI</li><li>PostgreSQL</li><li>Celery</li><li>Redis</li><li>Docker</li><li>AWS S3</li></ul>
+            <div class="project-links">
+              <a class="link-arrow" href="https://laendaen.com" target="_blank" rel="noopener">Visit laendaen.com <span aria-hidden="true">→</span></a>
+              <a class="store-link" href="https://apps.apple.com/us/app/laen-daen/id6756475917" target="_blank" rel="noopener">App Store</a>
+              <a class="store-link" href="https://play.google.com/store/apps/details?id=com.laendaen.mobileapp" target="_blank" rel="noopener">Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project spot reveal">
+          <div class="project-media project-media-api" aria-hidden="true">
+            <div class="api-panel">
+              <p class="api-title">hunger-delights / api</p>
+              <ul>
+                <li><span class="m m-get">GET</span><code>/restaurants/{id}/menu</code><span class="ok">200 · &lt;100ms</span></li>
+                <li><span class="m m-post">POST</span><code>/reservations</code><span class="ok">201</span></li>
+                <li><span class="m m-ws">WS</span><code>/bookings/live</code><span class="live">● live</span></li>
+                <li><span class="m m-post">POST</span><code>/orders/pickup</code><span class="ok">201</span></li>
+                <li><span class="m m-get">GET</span><code>/restaurants</code><span class="ok">200</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <span class="project-logo project-logo-text" aria-hidden="true">HD</span>
+              <div>
+                <p class="project-kind">Food-tech · Reservations &amp; ordering</p>
+                <h3>Hunger Delights</h3>
+              </div>
+            </div>
+            <p class="project-desc">Backend for restaurant profiles, dynamic menus, real-time reservations and pickup orders, serving multiple restaurant clients.</p>
+            <div class="project-impact">
+              <div><strong>&lt;100 ms</strong><span>menu retrieval</span></div>
+              <div><strong>Real-time</strong><span>booking over WebSockets</span></div>
+            </div>
+            <p class="project-label">What I built</p>
+            <ul class="project-points">
+              <li>Real-time booking workflows with concurrent reservation handling</li>
+              <li>PostgreSQL schema optimised for fast menu reads</li>
+              <li>Celery + Redis for confirmations and notifications</li>
+            </ul>
+            <ul class="mini-tags"><li>FastAPI</li><li>PostgreSQL</li><li>WebSockets</li><li>Celery</li><li>Redis</li><li>Docker</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <p class="more-link reveal">
+        <a class="btn btn-ghost" href="https://github.com/mannan-software-engineer" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.770 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          See more on GitHub
+        </a>
+      </p>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section container" id="skills">
+      <header class="section-head reveal">
+        <p class="kicker">Toolbox</p>
+        <h2>The stack I work in every day.</h2>
+      </header>
+
+      <div class="skills">
+        <div class="skill-group spot reveal" data-delay="0">
+          <h3><span class="skill-ico">{ }</span>Languages &amp; frameworks</h3>
+          <ul class="chips"><li class="core">Python</li><li class="core">FastAPI</li><li class="core">Django / DRF</li><li>Flask</li><li>Pydantic</li><li>SQLAlchemy</li><li>SQL</li><li>Bash</li></ul>
+        </div>
+        <div class="skill-group spot reveal" data-delay="1">
+          <h3><span class="skill-ico">⛁</span>Databases</h3>
+          <ul class="chips"><li class="core">PostgreSQL</li><li class="core">Redis</li><li>MySQL</li><li>MongoDB</li><li>SQLite</li></ul>
+        </div>
+        <div class="skill-group spot reveal" data-delay="2">
+          <h3><span class="skill-ico">☁</span>DevOps &amp; cloud</h3>
+          <ul class="chips"><li class="core">Docker</li><li class="core">Kubernetes</li><li class="core">GitHub Actions</li><li>Helm</li><li>Docker Hub</li><li>AWS EC2</li><li>AWS S3</li></ul>
+        </div>
+        <div class="skill-group spot reveal" data-delay="0">
+          <h3><span class="skill-ico">⇄</span>Async &amp; messaging</h3>
+          <ul class="chips"><li class="core">Celery</li><li class="core">Redis</li><li>WebSockets</li><li>Twilio</li><li>Firebase FCM</li></ul>
+        </div>
+        <div class="skill-group spot reveal" data-delay="1">
+          <h3><span class="skill-ico">◎</span>Observability &amp; testing</h3>
+          <ul class="chips"><li class="core">ELK Stack</li><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>LogFire</li><li>Apache JMeter</li></ul>
+        </div>
+        <div class="skill-group spot reveal" data-delay="2">
+          <h3><span class="skill-ico">⛨</span>Auth &amp; security</h3>
+          <ul class="chips"><li class="core">JWT</li><li class="core">OAuth 2.0</li><li>RBAC</li><li>Dependency injection</li><li>Custom middleware</li></ul>
+        </div>
+      </div>
+      <p class="skills-legend reveal"><span class="legend-dot"></span>Highlighted = daily, production-level use</p>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section container" id="about">
+      <div class="about">
+        <figure class="about-photo reveal">
+          <div class="photo-frame">
+            <picture>
+              <source srcset="src/webp/portrait.webp" type="image/webp" />
+              <img src="src/webp/portrait.jpg" alt="Portrait of Abdul Mannan" width="720" height="900" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <figcaption>
+            <span class="status-dot" aria-hidden="true"></span>
+            Currently at Crypthon Technologies
+          </figcaption>
+        </figure>
+
+        <div class="about-text">
+          <header class="section-head reveal">
+            <p class="kicker">About me</p>
+            <h2>An engineer who owns the outcome, not just the ticket.</h2>
+          </header>
+          <p class="reveal">
+            I started out automating workflows with Selenium and Python. Three years later I'm architecting microservices
+            and running the Kubernetes clusters they deploy to. Along the way I learned that the best backend work is
+            invisible: fast responses, correct data and quiet on-call nights.
+          </p>
+          <p class="reveal">
+            I've built peer-to-peer logistics, digital wallets with full audit trails, FBR e-invoicing compliance and
+            real-time reservation systems. I like clear service contracts, schemas that make invalid states impossible,
+            and code a teammate can pick up without a walkthrough.
+          </p>
+
+          <dl class="facts reveal">
+            <div><dt>Role</dt><dd>Senior Backend Developer</dd></div>
+            <div><dt>Experience</dt><dd>3+ years</dd></div>
+            <div><dt>Based in</dt><dd>Lahore, Pakistan</dd></div>
+            <div><dt>Education</dt><dd>BS Computer Science, Chanab College Faisalabad</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:mannanforge@gmail.com">mannanforge@gmail.com</a></dd></div>
+            <div><dt>Phone / WhatsApp</dt><dd><a href="tel:+923402480258">+92 340 2480258</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section container" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <p class="badge"><span class="status-dot" aria-hidden="true"></span>Open to new opportunities</p>
+        <h2>Need a backend engineer who ships? <span class="gradient-text">Let's talk.</span></h2>
+        <p class="contact-sub">
+          I'm open to senior backend, platform and DevOps-leaning roles, and selected freelance projects.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="mailto:mannanforge@gmail.com?subject=Opportunity%20for%20Abdul%20Mannan">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Email me
+          </a>
+          <button class="btn btn-ghost btn-lg" type="button" id="copy-email" data-email="mannanforge@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            <span id="copy-label">mannanforge@gmail.com</span>
+          </button>
+        </div>
+        <div class="contact-actions contact-actions-2">
+          <a class="btn btn-ghost" href="tel:+923402480258">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            +92 340 2480258
+          </a>
+          <a class="btn btn-ghost btn-whatsapp" href="https://wa.me/923402480258?text=Hi%20Abdul%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.900.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 9.8 9.8c0 5.4-4.4 9.8-9.8 9.8zM20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 23.8 12c0-3.2-1.2-6.1-3.3-8.5z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/mannan-software-engineer" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/mannan-software-engineer" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="src/pdf/Abdul-Mannan-CV.pdf" target="_blank" rel="noopener">Download CV ↗</a></li>
+        </ul>
       </div>
     </section>
   </main>
-  <!-- main ends here -->
 
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0" aria-label="Quote">
-            "Build systems that scale. Ship code that lasts."
-          </article>
-        </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article>GetinTouch();</article>
-          </div>  
-          <div class="logos">
-            <a href="https://www.instagram.com/mannan_gujjar__" target="_blank" tabindex="0" aria-label="Instagram" class="logo-insta"><svg viewBox="0 0 448 512" class="SocialHandle">
-                <defs>
-                  <linearGradient id="insta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#f9ce34"/>
-                    <stop offset="25%" stop-color="#ee2a7b"/>
-                    <stop offset="50%" stop-color="#6228d7"/>
-                    <stop offset="100%" stop-color="#E1306C"/>
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-              </svg></a>
-
-            <a href="https://www.linkedin.com/in/mannan-python-developer/" target="_blank" aria-label="LinkedIn" class="logo-linkedin"><svg class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <a href="https://github.com/mannan-python-developer" target="_blank" aria-label="GitHub" class="logo-github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a>
-
-            <a href="mailto:c6mannan@gmail.com" target="_blank" aria-label="Email" class="logo-email"><svg id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar-mannan.png" alt="Abdul Mannan" class="footer-avatar-img" id="footer-wala-avatar"/>
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
-            </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <article>
-            Design & Built by Abdul Mannan
-            &#169; 2026
-          </article>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="brand" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-name">Abdul Mannan</span>
+      </a>
+      <p>© <span id="year">2026</span> Abdul Mannan · Senior Backend Developer · Lahore, Pakistan</p>
+      <ul>
+        <li><a href="https://github.com/mannan-software-engineer" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mannan-software-engineer" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:mannanforge@gmail.com">Email</a></li>
+        <li><a href="tel:+923402480258">+92 340 2480258</a></li>
+      </ul>
     </div>
   </footer>
-  <!-- footer ends here -->
 
-  <script src="main.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openURL() {
-      var url = "src/pdf/Abdul_Mannan.pdf";
-
-      window.open(url, "_blank");
-    }
-  </script>
-
-  <script src="oneko/oneko.js" data-cat="oneko/oneko.png"></script>
+  <script src="main.js?v=5" defer></script>
 </body>
-
 </html>
